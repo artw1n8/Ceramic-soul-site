@@ -6,7 +6,7 @@
     font-style: italic;
 }
 
-.title-h2 {
+.title-h1, .title-h2 {
     @include title;
     font-size: 32px;
 }
@@ -17,6 +17,7 @@
 }
 
 @media screen and (min-width: 768px) {
+    .title-h1,
     .title-h2 {
         font-size: 36px;
     }
@@ -27,6 +28,7 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .title-h1,
     .title-h2 {
         font-size: 40px;
     }
