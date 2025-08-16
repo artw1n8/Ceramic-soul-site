@@ -1,0 +1,76 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.about {
+    padding-top: 50px;
+
+    &__title {
+        margin-top: 60px;
+    }
+
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;  
+    }
+    
+    &__img {
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &__text {
+        color: $dark;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        &__img {
+            width: 600px;
+            aspect-ratio: 150/103;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about {
+        &__wrapper {
+            gap: 20px;
+        }
+
+        &__img {
+            width: 550px;
+            margin: 0;
+        }
+
+        &__text {
+            width: calc(50%);
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .about {
+        padding-top: 40px;
+        
+        &__title {
+            margin-top: 100px;
+        }
+
+        &__wrapper {
+            margin-top: 100px;
+        }
+
+        &__img {
+            width: 700px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+}
