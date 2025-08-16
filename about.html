@@ -99,11 +99,14 @@
                         <label class="touch__label" for="email">Your guestion</label>
                         <textarea class="touch__textarea" name="question" id="question" placeholder="Question"
                             required></textarea>
-    
+                        <div class="error-message"></div>
+
                         <label class="touch__label touch__check-block" for="checkbox">
                             <input class="touch__checkbox" type="checkbox" id="checkbox" required>
                             I agree with the <a href="#">terms</a>
                         </label>
+                        <div class="checkbox-error-message"></div>
+                        
                         <button class="btn-send touch__btn">send request</button>
                     </form>
                 </div>
@@ -112,6 +115,18 @@
         </div>
     </section>
 
+    <section class="findus">
+        <div class="container">
+            <h2 class="title-h2">find us</h2>
+            <div class="findus__wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6047.118151052014!2d-73.95202752460608!3d40.72772202466992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2593c58f8777d%3A0xe2215ac687bd7249!2sCLAY%20SPACE%20Ceramic%20Center!5e0!3m2!1sru!2sby!4v1755359961340!5m2!1sru!2sby"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </div>
+    </section>
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
@@ -121,10 +136,14 @@
                     <form action="#">
                         <input class="footer__input footer__text-spaced" type="email" id="email" name="email"
                             placeholder="Enter your e-mail" required>
+                        <div class="error-message"></div>
+
                         <label class="footer__check-block" for="checkbox">
                             <input class="footer__checkbox" type="checkbox" id="checkbox" required>
                             I agree with the <a href="#">terms</a>
                         </label>
+                        <div class="checkbox-error-message"></div>
+                        
                         <button class="btn-submit footer__btn">submit</button>
                     </form>
                 </div>

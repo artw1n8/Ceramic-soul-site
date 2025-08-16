@@ -113,6 +113,15 @@
         font-weight: 400;
         line-height: normal;
     }
+
+    .just-validate-error-field {
+        border-bottom-color: $ui-error;
+        color: $ui-error;
+
+        &::placeholder {
+            color: $ui-error;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
