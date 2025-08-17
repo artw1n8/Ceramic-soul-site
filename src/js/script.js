@@ -127,7 +127,7 @@ try {
     const val2 = document.querySelector('.footer__newsletter').lastElementChild;
     const validator2 = new JustValidate(val2);
 
-    validator2.addField('#email', [
+    validator2.addField('#footer__email', [
     {
       rule: 'required',
     },
@@ -135,15 +135,15 @@ try {
       rule: 'email',
     }
   ],  {
-    errorsContainer: val2.querySelector('#email')
+    errorsContainer: val2.querySelector('#footer__email')
     .parentElement.querySelector(".error-message")
   })
-  .addField('#checkbox', [
+  .addField('#footer__checkbox', [
     {
       rule: 'required',
     },
   ], {
-    errorsContainer: val2.querySelector('#checkbox')
+    errorsContainer: val2.querySelector('#footer__checkbox')
     .parentElement.parentElement.querySelector(".checkbox-error-message")
   })
   .onSuccess(( event ) => {
