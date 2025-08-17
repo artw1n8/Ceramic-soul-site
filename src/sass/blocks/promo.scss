@@ -65,6 +65,10 @@
         &__title {
             padding-left: 571px;
         }
+
+        &__cta {
+            animation: slideIn 3s;
+        }
     }
 }
 

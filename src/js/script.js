@@ -109,6 +109,18 @@ try {
     errorsContainer: document.querySelector('#checkbox')
     .parentElement.parentElement.querySelector(".checkbox-error-message")
   })
+  .onSuccess(( event ) => {
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+      method: "POST",
+      body: formData,
+    }).then(res => res.json()).then(data => {
+      console.log("Success", data);
+      form.reset();
+    })
+  });
 } catch(e){}
 
 try {
@@ -134,4 +146,16 @@ try {
     errorsContainer: val2.querySelector('#checkbox')
     .parentElement.parentElement.querySelector(".checkbox-error-message")
   })
+  .onSuccess(( event ) => {
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+      method: "POST",
+      body: formData,
+    }).then(res => res.json()).then(data => {
+      console.log("Success", data);
+      form.reset();
+    })
+  });
 } catch(e){}
